@@ -3,6 +3,8 @@
 
     <publicar-conteudo-vue />
 
+      <h2>Login</h2>
+
       <card-conteudo-vue
       perfil="https://materializecss.com/images/yuna.jpg"
       nome="Maria Silva"
@@ -27,7 +29,7 @@ import PublicarConteudoVue from '@/components/social/PublicarConteudoVue'
 
 
 export default {
-  name: 'Home',
+  name: 'Login',
   data () {
     return {
 

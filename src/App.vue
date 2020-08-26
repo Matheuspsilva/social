@@ -1,7 +1,7 @@
 <template>
-  <span >
+  <span>
     <header>
-      <nav-bar logo="Social" url="#" cor="blue" />
+      <nav-bar logo="Facebook" url="#" cor="blue" />
     </header>
 
     <main>
@@ -13,7 +13,7 @@
             <card-menu-vue>
               <div class="row valign-wrapper">
                 <grid-vue tamanho="4">
-                  <img src="https://materializecss.com/images/yuna.jpg" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+                  <img src="https://materializecss.com/images/yuna.jpg" alt="" class="circle responsive-img">
                 </grid-vue>
                  <grid-vue tamanho="8">
                   <span class="black-text">
@@ -39,8 +39,7 @@
       </div>
     </main>
 
-<div class="footer">
-      <footer-vue cor="blue" logo="Social" descricao="Teste de descrição" ano="2018">
+    <footer-vue cor="blue" logo="Social" descricao="Teste de descrição" ano="2018">
 
       <li><a class="grey-text text-lighten-3" href="#!">Home</a></li>
       <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
@@ -48,10 +47,6 @@
       <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
 
     </footer-vue>
-
-</div>
-
-
 
   </span>
 </template>
@@ -61,6 +56,8 @@ import NavBar from '@/components/layouts/NavBarVue'
 import FooterVue from '@/components/layouts/FooterVue'
 import GridVue from '@/components/layouts/GridVue'
 import CardMenuVue from '@/components/layouts/CardMenuVue'
+
+
 
 
 export default {
@@ -75,12 +72,6 @@ export default {
 </script>
 
 <style>
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-}
 
 
 </style>
