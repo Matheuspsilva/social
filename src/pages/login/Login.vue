@@ -1,23 +1,13 @@
 <template>
-  <span>
-
-    <publicar-conteudo-vue />
+  <template-login>
 
       <h2>Login</h2>
 
-      <card-conteudo-vue
-      perfil="https://materializecss.com/images/yuna.jpg"
-      nome="Maria Silva"
-      data="12/10/2019 17:30">
+      <input type="text" placeholder="email">
+      <input type="password" placeholder="password">
+      <button class="btn">Entrar</button>
 
-        <card-detalhe-vue img="https://materializecss.com/images/sample-1.jpg"
-          titulo=""
-          txt="I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively." />
-
-      </card-conteudo-vue >
-
-  </span>
+  </template-login>
 
 </template>
 
@@ -25,6 +15,7 @@
 import CardConteudoVue from '@/components/social/CardConteudoVue'
 import CardDetalheVue from '@/components/social/CardDetalheVue'
 import PublicarConteudoVue from '@/components/social/PublicarConteudoVue'
+import TemplateLogin from '@/templates/TemplateLogin'
 
 
 
@@ -38,7 +29,9 @@ export default {
     components:{
       CardConteudoVue,
       CardDetalheVue,
-      PublicarConteudoVue
+      PublicarConteudoVue,
+      TemplateLogin
+
   }
 }
 </script>
