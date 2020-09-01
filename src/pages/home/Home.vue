@@ -1,19 +1,35 @@
 <template>
 	<site-template>
+    <span slot="menuesquerdo">
+      <div class="row valign-wrapper">
+        <grid-vue tamanho="4">
+          <img src="https://materializecss.com/images/yuna.jpg" alt="" class="circle responsive-img">
+        </grid-vue>
+          <grid-vue tamanho="8">
+          <span class="black-text">
+            <h5>Maria Silva</h5>
+            Add the "circle" class to it to make it appear circular.
+          </span>
+        </grid-vue>
+      </div>
+    </span>
 
-		<publicar-conteudo-vue />
+    <span slot="principal">
+      <publicar-conteudo-vue />
+      <card-conteudo-vue
+      perfil="https://materializecss.com/images/yuna.jpg"
+      nome="Maria Silva"
+      data="12/10/2019 17:30">
 
-		<card-conteudo-vue
-		perfil="https://materializecss.com/images/yuna.jpg"
-		nome="Maria Silva"
-		data="12/10/2019 17:30">
+        <card-detalhe-vue img="https://materializecss.com/images/sample-1.jpg"
+        titulo=""
+        txt="I am a very simple card. I am good at containing small bits of information.
+        I am convenient because I require little markup to use effectively." />
 
-			<card-detalhe-vue img="https://materializecss.com/images/sample-1.jpg"
-			titulo=""
-			txt="I am a very simple card. I am good at containing small bits of information.
-			I am convenient because I require little markup to use effectively." />
+      </card-conteudo-vue >
+    </span>
 
-		</card-conteudo-vue >
+
 
 	</site-template>
 

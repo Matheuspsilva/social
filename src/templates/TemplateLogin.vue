@@ -1,14 +1,17 @@
 <template>
 	<span>
 		<header>
-			<nav-bar logo="Facebook" url="#" cor="blue" />
+			<nav-bar logo="Fakebook" url="/" cor="blue" >
+        <li><router-link to="/">Home</router-link></li>
+        <li><router-link to="/login">Login</router-link></li>
+			</nav-bar>
 		</header>
 
 		<main>
 			<div class="container">
 				<div class="row">
 					<grid-vue tamanho="6">
-						<slot name="menuesquerdo"/>
+						  <slot name="menuesquerdo"/>
 					</grid-vue>
 					<grid-vue tamanho="6">
 						<slot name="principal"/>
