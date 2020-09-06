@@ -6,11 +6,28 @@
     </span>
 
       <span slot="principal">
-        <h2>Login</h2>
+        <span v-if="!cadastro">
+          <h2>Login</h2>
 
-        <input type="text" placeholder="Email">
-        <input type="password" placeholder="Password">
-        <button  class="btn blue waves-effect waves-light">Entrar</button>
+          <input type="text" placeholder="Email">
+          <input type="password" placeholder="Password">
+          <button  class="btn blue waves-effect waves-light">Entrar</button>
+          <button  class="btn light-blue lighten-2 waves-effect waves-light" v-on:click="cadastro = !cadastro">Cadastre-se</button>
+
+        </span>
+
+        <span v-if="cadastro">
+          <h2>Cadastro</h2>
+
+          <input type="text" placeholder="Nome">
+          <input type="text" placeholder="Email">
+          <input type="password" placeholder="Senha">
+          <input type="password" placeholder="Confirme sua Senha">
+
+          <button  class="btn blue waves-effect waves-light">Cadastrar</button>
+          <button  class="btn light-blue lighten-2 waves-effect waves-light" v-on:click="cadastro = !cadastro">Já possuo conta</button>
+
+        </span>
       </span>
 
 
@@ -19,9 +36,7 @@
 </template>
 
 <script>
-import CardConteudoVue from '@/components/social/CardConteudoVue'
-import CardDetalheVue from '@/components/social/CardDetalheVue'
-import PublicarConteudoVue from '@/components/social/PublicarConteudoVue'
+
 import TemplateLogin from '@/templates/TemplateLogin'
 
 
@@ -30,13 +45,10 @@ export default {
   name: 'Login',
   data () {
     return {
-
+      cadastro:false
     }
   },
     components:{
-      CardConteudoVue,
-      CardDetalheVue,
-      PublicarConteudoVue,
       TemplateLogin
 
   }
